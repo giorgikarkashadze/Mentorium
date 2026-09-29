@@ -15,7 +15,7 @@ export default function LocaleSwitcher() {
   return (
     <button
       type="button"
-      onClick={() => router.replace({ pathname, params }, { locale: otherLocale })}
+      onClick={() => router.replace({ pathname, query: params }, { locale: otherLocale })}
       style={{
         fontSize: 13,
         fontWeight: 500,

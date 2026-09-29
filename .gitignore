@@ -426,3 +426,4 @@ Thumbs.db
 
 # Testing
 coverage/
+.next

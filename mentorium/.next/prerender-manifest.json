@@ -1,1 +1,37 @@
-{"version":4,"routes":{"/ka":{},"/en":{},"/ka/login":{},"/en/login":{},"/ka/register":{},"/en/register":{},"/ka/my-profile":{},"/en/my-profile":{},"/ka/courses":{},"/en/courses":{},"/ka/categories":{},"/en/categories":{},"/ka/about":{},"/en/about":{}},"dynamicRoutes":{"/[locale]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/[locale]","routeRegex":"^\\/([^/]+?)(?:\\/)?$","allowHeader":[]},"/[locale]/login":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/[locale]/login","routeRegex":"^\\/([^/]+?)\\/login(?:\\/)?$","allowHeader":[]},"/[locale]/register":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/[locale]/register","routeRegex":"^\\/([^/]+?)\\/register(?:\\/)?$","allowHeader":[]},"/[locale]/my-profile":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/[locale]/my-profile","routeRegex":"^\\/([^/]+?)\\/my\\-profile(?:\\/)?$","allowHeader":[]},"/[locale]/courses":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/[locale]/courses","routeRegex":"^\\/([^/]+?)\\/courses(?:\\/)?$","allowHeader":[]},"/[locale]/categories":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/[locale]/categories","routeRegex":"^\\/([^/]+?)\\/categories(?:\\/)?$","allowHeader":[]},"/[locale]/about":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/[locale]/about","routeRegex":"^\\/([^/]+?)\\/about(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"36abc8debf8a44460c683bf40fdde749","previewModeSigningKey":"b64020082f27264112dd1734d3c2ae0e8250ceef799bfd2e3da29b74c0cc7e37","previewModeEncryptionKey":"9c9f6308992feb0072502f1e7106fdfd5352367e7df4560540639413e688759f"}}
+{
+  "version": 4,
+  "routes": {
+    "/_not-found": {
+      "initialStatus": 404,
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/_not-found",
+      "dataRoute": "/_not-found.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    }
+  },
+  "dynamicRoutes": {},
+  "notFoundRoutes": [],
+  "preview": {
+    "previewModeId": "cd73cc0d920bf3f72e6dcafad44e5000",
+    "previewModeSigningKey": "ae5a918dc803fd269ef4e8bedf481b108b3455c8afcd2ef2a655cde6fef18b9a",
+    "previewModeEncryptionKey": "1b42499c8c9ea95edd62745017d862920ee4307ab04e4a20d0c25c858fea292d"
+  }
+}
