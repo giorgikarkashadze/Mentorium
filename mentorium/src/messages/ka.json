@@ -1,11 +1,11 @@
 {
-  "brand": "Mentorium",
+  "brand": "მენტორიუმი",
   "nav": {
     "courses": "კურსები",
     "categories": "კატეგორიები",
     "about": "ჩვენ შესახებ",
     "login": "შესვლა",
-    "signup": "უფასო რეგისტრაცია",
+    "signup": "რეგისტრაცია",
     "myLearning": "ჩემი სწავლა",
     "logout": "გასვლა"
   },
